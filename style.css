@@ -1,0 +1,346 @@
+/* ================= Default ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* body {
+    background-color: #bcbbbbbd;
+} */
+
+.cover {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+
+footer {
+    background-color: white;
+}
+
+/* ================== div (head) ================== */
+
+.head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #c6c6c6c6;
+}
+
+span.thick {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+span.thin {
+    font-size: 30px;
+    color: rgba(80, 69, 69, 0.819);
+}
+
+.head p {
+    font-size: 10px;
+}
+
+.head input {
+    padding: 5px;
+}
+
+.head button {
+    width: 150px;
+    padding: 5px;
+    background-color: #040404e5;
+    color: white;
+    border: none;
+}
+
+/* =================== Nav ======================== */
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: white;
+}
+
+ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background-color: #040404e5;
+    color: white;
+}
+
+ul li.drop {
+    display: none;
+}
+
+/* =================== Main Section1 ============== */
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.section1a {
+    width: 60%;
+}
+
+.section1a img {
+    position: relative;
+    width: 100%;
+    margin: 20px;
+}
+
+.section1a h2 {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    font-size: 50px;
+    color: white;
+}
+
+.section1b {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+}
+
+
+.section1c img,
+.section1d img {
+    width: 100%;
+    height: 270px;
+    margin: 10px 0;
+}
+
+.section1c,
+.section1d {
+    position: relative;
+}
+
+.section1c h2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+.section1c p {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.section1d h2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+.section1d p {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+/* =============== main Section2 ================== */
+main h2.divid {
+    padding: 10px 0 10px 30px;
+    background-color: white;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.section2 img {
+    width: 150px;
+    height: 200px;
+}
+
+.section2 p {
+    width: 150px;
+}
+
+.section2 button {
+    background-color: #040404e5;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+span.a {
+    color: red;
+}
+
+span.b {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ================= Footer ====================== */
+.foot {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+.foot1 img {
+    width: 450px;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.foot1 {
+    position: relative;
+}
+
+.foot1 h2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 30px;
+}
+
+.foot1 p {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.foota {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.foota img {
+    width: 30px;
+    height: 30px;
+}
+
+.footb {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+/* ====================== Mobile ================== */
+
+@media (max-width: 1000px) {
+
+    span.thick,
+    span.thin {
+        font-size: 20px;
+    }
+
+    .head input,
+    .head button {
+        display: none;
+    }
+
+
+    ul li:not(:nth-child(9)) {
+        display: none;
+    }
+
+
+    ul li.drop {
+        display: block;
+    }
+
+    /* =============== Main Section1 ============== */
+
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1a {
+        width: 90%;
+    }
+
+    .section1a img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .section1a h2 {
+        top: 33%;
+        font-size: 30px;
+        left: 20%;
+    }
+
+    .section1b {
+        width: 90%;
+    }
+
+    .section1c p,
+    .section1d p {
+        top: 150px;
+    }
+
+    .section1c img,
+    .section1d img {
+        width: 100%;
+        height: 400px;
+        margin: 10px 0;
+    }
+
+    /* ================ Main Section 2 =========== */
+    .section2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    /* ================ Footer ===================== */
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .foot1 img {
+        width: 100%;
+        height: 400px;
+        margin: 20px 0;
+    }
+
+
+    .foota,
+    .footb {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
